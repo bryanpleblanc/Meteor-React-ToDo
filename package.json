@@ -1,0 +1,35 @@
+{
+  "name": "reactToDo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "@progress/kendo-data-query": "^1.4.0",
+    "@progress/kendo-drawing": "^1.5.7",
+    "@progress/kendo-react-dateinputs": "^1.1.0",
+    "@progress/kendo-react-dropdowns": "^1.1.0",
+    "@progress/kendo-react-grid": "^1.1.0",
+    "@progress/kendo-react-inputs": "^1.1.0",
+    "@progress/kendo-react-intl": "^1.1.0",
+    "@progress/kendo-react-pdf": "^1.1.0",
+    "bcrypt": "^2.0.1",
+    "cldr-data": "^32.0.1",
+    "history": "^4.7.2",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
